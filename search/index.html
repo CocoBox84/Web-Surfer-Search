@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Web Surfer Search: </title>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+  <div id="container">
+    <a href="/">Home</a>
+    <form action="/search/">
+      <input id="search-bar" type="text" placeholder="Enter your search" name="q" value="">
+      <input type="submit" value="Surf">
+    </form>
+  </div>
+</body>
+
+<script>
+  if (!new URLSearchParams(window.location.search).get("q")) {
+    window.location.href = "/";
+  } else {
+    window.document.title = `Web Surfer Search: ${new URLSearchParams(window.location.search).get("q")}`;
+    window.document.getElementById("search-bar").value = new URLSearchParams(window.location.search).get("q");
+    window.location.href = `//google.com/search/?q=${new URLSearchParams(window.location.search).get("q")}`;
+  }
+</script>
+
+</html>

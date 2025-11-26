@@ -1,0 +1,10 @@
+form {
+    justify-self: center !important;
+    width: calc(100% - 21px) !important;
+}
+
+#container {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}

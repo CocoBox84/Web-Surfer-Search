@@ -1,0 +1,70 @@
+html,
+body {
+    background-color: dodgerblue;
+    background-image: linear-gradient(rgb(9, 52, 71), rgb(13, 108, 148));
+    background-image: linear-gradient(rgb(13, 108, 148), rgb(9, 52, 71));
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0px;
+    padding: 0px;
+}
+
+button,
+form input[type="submit"] {
+    background-color: rgb(0, 128, 255);
+    color: white;
+    border: 3px outset dodgerblue;
+    border-radius: 3px;
+}
+
+button:hover,
+form input:hover[type="submit"] {
+    background-color: rgb(0, 97, 194);
+    border: 3px solid rgb(25, 130, 235);
+}
+
+button:active,
+form input:active[type="submit"] {
+    background-color: rgb(1, 57, 112);
+    border: 3px inset rgb(12, 96, 180);
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    column-gap: 12px;
+}
+
+form input[type="text"] {
+    outline: rgb(23, 121, 219) 2px dotted !important;
+    border: rgb(17, 99, 180) 2px dashed !important;
+    background-color: white !important;
+    border-radius: 10px;
+    padding: 10px;
+    flex: 1;
+}
+
+form input[type="submit"] {
+    padding: 10px 30px;
+}
+
+#logo {
+    margin-bottom: 20px;
+}
+
+#logo-search-text {
+    font-family: cursive !important;
+    font-size: 50px;
+    color: darkcyan;
+    margin: 0px;
+    margin-top: -110px;
+    position: absolute;
+}
+
+#container {
+    width: 750px !important;
+    margin: auto !important;
+    height: 100% !important;
+    display: block;
+}
